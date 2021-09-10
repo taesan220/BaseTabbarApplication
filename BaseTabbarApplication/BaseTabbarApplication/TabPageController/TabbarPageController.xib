@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarPageController" customModule="BaseApplicationPractice" customModuleProvider="target">
+            <connections>
+                <outlet property="pageViewContainer" destination="QTI-I7-6fm" id="1Sg-hu-Gea"/>
+                <outlet property="tabBarContainer" destination="ejo-k6-ZI8" id="7aA-hl-Q0W"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejo-k6-ZI8">
+                    <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="a6d-kR-mzu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTI-I7-6fm">
+                    <rect key="frame" x="0.0" y="44" width="414" height="758"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ejo-k6-ZI8" secondAttribute="bottom" id="6IM-Be-sHO"/>
+                <constraint firstItem="ejo-k6-ZI8" firstAttribute="top" secondItem="QTI-I7-6fm" secondAttribute="bottom" id="IBb-bh-72u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ejo-k6-ZI8" secondAttribute="trailing" id="TV5-q3-W42"/>
+                <constraint firstItem="QTI-I7-6fm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WCP-UV-bb2"/>
+                <constraint firstItem="ejo-k6-ZI8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="wvt-Hc-BhR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QTI-I7-6fm" secondAttribute="trailing" id="yj7-on-WAs"/>
+                <constraint firstItem="QTI-I7-6fm" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ymh-cH-aVU"/>
+            </constraints>
+            <point key="canvasLocation" x="96" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
