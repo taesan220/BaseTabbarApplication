@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarPageController" customModule="BaseApplicationPractice" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarPageController" customModule="BaseTabbarApplication" customModuleProvider="target">
             <connections>
                 <outlet property="pageViewContainer" destination="QTI-I7-6fm" id="1Sg-hu-Gea"/>
                 <outlet property="tabBarContainer" destination="ejo-k6-ZI8" id="7aA-hl-Q0W"/>

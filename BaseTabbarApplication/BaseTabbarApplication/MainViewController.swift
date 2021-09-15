@@ -2,12 +2,12 @@
 //  ViewController.swift
 //  CustomPageViewController
 //
-//  Created by Taesan Kim on 2021/09/07.
+//  Created by sdev-mac on 2021/09/07.
 //
 
 import UIKit
 
-class MainViewController: UIViewController, ElementViewControllerDelegate {
+class MainViewController: BaseViewController, ElementViewControllerDelegate {
 
 
 //MARK: - Global variation
@@ -21,15 +21,22 @@ class MainViewController: UIViewController, ElementViewControllerDelegate {
     var greenVC: GreenViewController!
     var blueVC: BlueViewController!
     
+//MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.initPageViewController()  // PageView에 들어갈 화면 초기화
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+    }
+    
+    //뷰가 모두 로드된 후 호출되는 메소드 -> SubView 초기화 (viewDidLaod에서 호출)
+    override func subviewInitialize() {
+        super.subviewInitialize()
         
+        self.initPageViewController()  // PageView에 들어갈 화면 초기화
+
         self.tabbarPageController.setPageView(index: 0, animated: false)  //초기화 시 에니메이션 적용 하지 않음
     }
 

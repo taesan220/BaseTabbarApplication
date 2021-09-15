@@ -12,7 +12,7 @@
         <!--Main View Controller-->
         <scene sceneID="V7R-6H-JAI">
             <objects>
-                <viewController id="T3w-XP-n1W" customClass="MainViewController" customModule="BaseApplicationPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="T3w-XP-n1W" customClass="MainViewController" customModule="BaseTabbarApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OUj-Aj-HXx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
         <!--Red View Controller-->
         <scene sceneID="JOx-Ou-IPs">
             <objects>
-                <viewController storyboardIdentifier="redVC" id="hM1-r3-w3O" customClass="RedViewController" customModule="BaseApplicationPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="redVC" id="hM1-r3-w3O" customClass="RedViewController" customModule="BaseTabbarApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V7m-Vo-yON">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +87,7 @@
         <!--Green View Controller-->
         <scene sceneID="UV8-gB-gyg">
             <objects>
-                <viewController storyboardIdentifier="greenVC" id="kPV-dA-wkz" customClass="GreenViewController" customModule="BaseApplicationPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="greenVC" id="kPV-dA-wkz" customClass="GreenViewController" customModule="BaseTabbarApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KWe-4f-Lkq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,7 +148,7 @@
         <!--Blue View Controller-->
         <scene sceneID="3kK-FX-mcR">
             <objects>
-                <viewController storyboardIdentifier="blueVC" id="kcu-pp-Bcz" customClass="BlueViewController" customModule="BaseApplicationPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="blueVC" id="kcu-pp-Bcz" customClass="BlueViewController" customModule="BaseTabbarApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RTm-Sb-Yro">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

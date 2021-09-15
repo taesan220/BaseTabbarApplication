@@ -23,6 +23,7 @@
 		B3DD0D0B26EB789A0079CCBE /* BaseElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD0CFF26EB789A0079CCBE /* BaseElementViewController.swift */; };
 		B3DD0D0C26EB789A0079CCBE /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD0D0126EB789A0079CCBE /* BaseView.swift */; };
 		B3DD0D0E26EB78A10079CCBE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD0D0D26EB78A10079CCBE /* MainViewController.swift */; };
+		B3FA1C4326F1831200B2A8BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FA1C4226F1831200B2A8BA /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		B3DD0CFF26EB789A0079CCBE /* BaseElementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseElementViewController.swift; sourceTree = "<group>"; };
 		B3DD0D0126EB789A0079CCBE /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		B3DD0D0D26EB78A10079CCBE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B3FA1C4226F1831200B2A8BA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +114,10 @@
 		B3DD0CF626EB789A0079CCBE /* TabPageController */ = {
 			isa = PBXGroup;
 			children = (
-				B3DD0CF726EB789A0079CCBE /* TabbarPageController.xib */,
 				B3DD0CF826EB789A0079CCBE /* pageView */,
 				B3DD0CFA26EB789A0079CCBE /* TabBar */,
 				B3DD0CFD26EB789A0079CCBE /* TabbarPageController.swift */,
+				B3DD0CF726EB789A0079CCBE /* TabbarPageController.xib */,
 			);
 			path = TabPageController;
 			sourceTree = "<group>";
@@ -140,6 +142,7 @@
 		B3DD0CFE26EB789A0079CCBE /* BaseViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B3FA1C4226F1831200B2A8BA /* BaseViewController.swift */,
 				B3DD0CFF26EB789A0079CCBE /* BaseElementViewController.swift */,
 			);
 			path = BaseViewController;
@@ -229,6 +232,7 @@
 				B3DD0D0E26EB78A10079CCBE /* MainViewController.swift in Sources */,
 				B3DD0D0226EB789A0079CCBE /* BlueViewController.swift in Sources */,
 				B3DD0D0A26EB789A0079CCBE /* TabbarPageController.swift in Sources */,
+				B3FA1C4326F1831200B2A8BA /* BaseViewController.swift in Sources */,
 				B3DD0D0926EB789A0079CCBE /* CustomTabBar.swift in Sources */,
 				B3DD0D0726EB789A0079CCBE /* CustomPageViewController.swift in Sources */,
 				B3DD0D0526EB789A0079CCBE /* CustomIndicatorView.swift in Sources */,
