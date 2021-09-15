@@ -23,7 +23,19 @@ class BaseView: UIView {
 
     //하위 뷰에서 오버라이딩 해서 호출
     func viewWillApear() {}
+    
+    override func updateConstraints() {
+        super.updateConstraints()
+        
+        DispatchQueue.main.async {
+            self.subviewInitialization()
+        }
+    }
 
+    //하위 뷰에서 오버라이딩 해서 호출
+    func subviewInitialization() {}
+    
+    
     //하위 뷰를 add 하는 메소드
     func setSubView(cellXibName: String) {
 

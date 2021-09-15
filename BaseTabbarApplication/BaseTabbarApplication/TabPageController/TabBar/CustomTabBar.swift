@@ -23,14 +23,34 @@ class CustomTabBar: BaseView {
     @IBOutlet weak var indicatorBarXGapConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var indicatorBarWidthConstraint: NSLayoutConstraint!
+        
+    @IBOutlet weak var indicatorBarHeightConstraint: NSLayoutConstraint!
     
     var indicatorBarWidth: CGFloat = 0
+    
+    var isIndicatorBarHiden: Bool = true {  //탭바 인디케이터바 숨김 여부를 적용하는 변수
+        didSet {
+            if isIndicatorBarHiden {    //인디케이터 숨김
+            
+                self.tabbarIndicatView.isHidden = true
+                self.indicatorBarHeightConstraint.constant = 0
+            
+            } else {    //인디케이터 표시
+
+                self.tabbarIndicatView.isHidden = false
+                self.indicatorBarHeightConstraint.constant = 2
+            }
+        }
+    }
     
     //Buttons
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
     
+    //Variation for Selected Tab Action
+    var selectedTabIndex = 0
+    var isIndicatorBarAnimated = false
     
 //MARK: - Life Cycle
     override func viewWillApear() {
@@ -40,12 +60,19 @@ class CustomTabBar: BaseView {
 //MARK: - Initialization
     
     // 탭바의 인디케이터 바 넓이를 적용하는 메소드
-    func setIndicatorBarWidth(viewControllerCount: Int) {
+    func setIndicatorBarWidth(tabBarButtonCount: Int) {
         
-        // Tabbar Indicator 넓이를 구함
-        self.indicatorBarWidth = self.bounds.width / CGFloat(viewControllerCount)
-        
-        self.indicatorBarWidthConstraint.constant = self.indicatorBarWidth
+        if isIndicatorBarHiden {    //탭바의 인디케이터 바가 표시하도록 설정 되었을 경우
+
+            print("Tab bar final Width = \(self.bounds.width)")
+            
+            // Tabbar Indicator 넓이를 구함
+            self.indicatorBarWidth = self.bounds.width / CGFloat(tabBarButtonCount)
+            
+            self.indicatorBarWidthConstraint.constant = self.indicatorBarWidth
+            
+            moveIndicatorLocation(selectedTabIndex: self.selectedTabIndex, animated: self.isIndicatorBarAnimated)
+        }
     }
     
 //MARK: - Button Pressed
@@ -68,18 +95,27 @@ class CustomTabBar: BaseView {
     // 탭바의 인디케이터 바 위치를 이동시키는 메소드
     func moveIndicatorLocation(selectedTabIndex: Int, animated: Bool = true) {
         
-        if animated {
-            DispatchQueue.main.async {
+        self.selectedTabIndex = selectedTabIndex
+        self.isIndicatorBarAnimated = animated
+        
+        if isIndicatorBarHiden {    //탭바의 인디케이터 바가 표시하도록 설정 되었을 경우
             
-                UIView.animate(withDuration: 0.2) {
-                    self.indicatorBarXGapConstraint.constant = self.indicatorBarWidth * CGFloat(selectedTabIndex)
-                    
-                    self.layoutIfNeeded()
+            if animated {
+                DispatchQueue.main.async {
+                
+                    UIView.animate(withDuration: 0.2) {
+                        
+                        self.indicatorBarXGapConstraint.constant = self.indicatorBarWidth * CGFloat(selectedTabIndex)
+                        
+                        self.layoutIfNeeded()
+                    }
                 }
+            } else {
+                        
+                indicatorBarXGapConstraint.constant = indicatorBarWidth * CGFloat(selectedTabIndex)
+                
+                self.layoutIfNeeded()
             }
-        } else {
-         
-            indicatorBarXGapConstraint.constant = indicatorBarWidth * CGFloat(selectedTabIndex)
         }
     }
     

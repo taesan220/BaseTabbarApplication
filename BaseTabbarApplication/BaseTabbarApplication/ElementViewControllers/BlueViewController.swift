@@ -53,4 +53,15 @@ class BlueViewController: BaseElementViewController {
         
         changePageView(index: 0, data: text)
     }
+    
+    @IBAction func testModelButtonPressed(_ sender: Any) {
+        
+        
+        let testModelVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "testModelViewController") as! TestModelViewController
+
+        let topVC = AppDelegate.shared.topViewController()
+        
+        topVC.present(testModelVC, animated: true, completion: nil)
+    }
+    
 }

@@ -22,11 +22,7 @@ class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSo
 //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
+        
         if viewControllerList.count <= 0 {
             
             print("There is no ViewController in ViewControllerList of PageViewController")
@@ -36,6 +32,10 @@ class CustomPageViewController: UIPageViewController, UIPageViewControllerDataSo
         self.setViewControllers([viewControllerList[0]], direction: .forward, animated: false) { isChanged in
             print("페이지 변경")
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
 // initialization

@@ -8,11 +8,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTabBar" customModule="BaseApplicationPractice" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTabBar" customModule="BaseTabbarApplication" customModuleProvider="target">
             <connections>
                 <outlet property="button1" destination="fIr-f1-O0c" id="MiQ-x3-SzE"/>
                 <outlet property="button2" destination="Uvu-mJ-Mc3" id="QkE-mF-MK1"/>
                 <outlet property="button3" destination="aje-yq-qTo" id="BUX-P8-ujV"/>
+                <outlet property="indicatorBarHeightConstraint" destination="6FT-3E-zz8" id="Nh0-Qs-6tx"/>
                 <outlet property="indicatorBarWidthConstraint" destination="BQR-n6-DPH" id="Krc-1v-RiR"/>
                 <outlet property="indicatorBarXGapConstraint" destination="myV-T5-F26" id="Zpz-Bz-aB4"/>
                 <outlet property="tabbarIndicatView" destination="olP-rY-gb5" id="CJW-qf-PtJ"/>

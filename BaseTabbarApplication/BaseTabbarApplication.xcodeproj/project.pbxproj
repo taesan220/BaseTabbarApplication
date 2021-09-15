@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3B294AD26F1D8CE003470C5 /* PeriodPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B294AC26F1D8CE003470C5 /* PeriodPickerViewController.swift */; };
+		B3B294AF26F1D923003470C5 /* String_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B294AE26F1D923003470C5 /* String_Extension.swift */; };
+		B3B294B126F1DD34003470C5 /* TestModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B294B026F1DD34003470C5 /* TestModelViewController.swift */; };
 		B3DD0CDD26EB784F0079CCBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD0CDC26EB784F0079CCBE /* AppDelegate.swift */; };
 		B3DD0CE426EB784F0079CCBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DD0CE226EB784F0079CCBE /* Main.storyboard */; };
 		B3DD0CE626EB784F0079CCBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DD0CE526EB784F0079CCBE /* Assets.xcassets */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3B294AC26F1D8CE003470C5 /* PeriodPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodPickerViewController.swift; sourceTree = "<group>"; };
+		B3B294AE26F1D923003470C5 /* String_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String_Extension.swift; sourceTree = "<group>"; };
+		B3B294B026F1DD34003470C5 /* TestModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModelViewController.swift; sourceTree = "<group>"; };
 		B3DD0CD926EB784E0079CCBE /* BaseTabbarApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseTabbarApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DD0CDC26EB784F0079CCBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3DD0CE326EB784F0079CCBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				B3DD0CDB26EB784E0079CCBE /* BaseTabbarApplication */,
-				B3DD0CDA26EB784E0079CCBE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +78,7 @@
 				B3DD0CD926EB784E0079CCBE /* BaseTabbarApplication.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		B3DD0CDB26EB784E0079CCBE /* BaseTabbarApplication */ = {
@@ -84,11 +90,13 @@
 				B3DD0CF026EB789A0079CCBE /* ElementViewControllers */,
 				B3DD0CF626EB789A0079CCBE /* TabPageController */,
 				B3DD0D0D26EB78A10079CCBE /* MainViewController.swift */,
+				B3DD0CDA26EB784E0079CCBE /* Products */,
 				B3DD0CDC26EB784F0079CCBE /* AppDelegate.swift */,
 				B3DD0CE226EB784F0079CCBE /* Main.storyboard */,
 				B3DD0CE526EB784F0079CCBE /* Assets.xcassets */,
 				B3DD0CE726EB784F0079CCBE /* LaunchScreen.storyboard */,
 				B3DD0CEA26EB784F0079CCBE /* Info.plist */,
+				B3B294B026F1DD34003470C5 /* TestModelViewController.swift */,
 			);
 			path = BaseTabbarApplication;
 			sourceTree = "<group>";
@@ -96,9 +104,9 @@
 		B3DD0CF026EB789A0079CCBE /* ElementViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B3DD0CF126EB789A0079CCBE /* BlueViewController.swift */,
 				B3DD0CF226EB789A0079CCBE /* RedViewController.swift */,
 				B3DD0CF326EB789A0079CCBE /* GreenViewController.swift */,
+				B3DD0CF126EB789A0079CCBE /* BlueViewController.swift */,
 			);
 			path = ElementViewControllers;
 			sourceTree = "<group>";
@@ -106,6 +114,7 @@
 		B3DD0CF426EB789A0079CCBE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B3B294AE26F1D923003470C5 /* String_Extension.swift */,
 				B3DD0CF526EB789A0079CCBE /* CustomIndicatorView.swift */,
 			);
 			path = Common;
@@ -118,6 +127,7 @@
 				B3DD0CFA26EB789A0079CCBE /* TabBar */,
 				B3DD0CFD26EB789A0079CCBE /* TabbarPageController.swift */,
 				B3DD0CF726EB789A0079CCBE /* TabbarPageController.xib */,
+				B3B294AC26F1D8CE003470C5 /* PeriodPickerViewController.swift */,
 			);
 			path = TabPageController;
 			sourceTree = "<group>";
@@ -228,11 +238,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3B294B126F1DD34003470C5 /* TestModelViewController.swift in Sources */,
 				B3DD0D0426EB789A0079CCBE /* GreenViewController.swift in Sources */,
 				B3DD0D0E26EB78A10079CCBE /* MainViewController.swift in Sources */,
 				B3DD0D0226EB789A0079CCBE /* BlueViewController.swift in Sources */,
 				B3DD0D0A26EB789A0079CCBE /* TabbarPageController.swift in Sources */,
+				B3B294AF26F1D923003470C5 /* String_Extension.swift in Sources */,
 				B3FA1C4326F1831200B2A8BA /* BaseViewController.swift in Sources */,
+				B3B294AD26F1D8CE003470C5 /* PeriodPickerViewController.swift in Sources */,
 				B3DD0D0926EB789A0079CCBE /* CustomTabBar.swift in Sources */,
 				B3DD0D0726EB789A0079CCBE /* CustomPageViewController.swift in Sources */,
 				B3DD0D0526EB789A0079CCBE /* CustomIndicatorView.swift in Sources */,
